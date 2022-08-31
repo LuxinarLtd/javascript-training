@@ -89,8 +89,80 @@ Filter the array with people who have a higher score than 3 and console their na
   },
   {
     name: 'Ian',
-    gender: 'female',
+    gender: 'male',
     score: 2
   }
 ]
+```
+
+## Task 11
+
+Return the object with the firstName "Jacob"
+
+```javascript
+[
+  { firstName: "Susan", age: 14 },
+  { firstName: "Daniel", age: 16 },
+  { firstName: "Bruno", age: 56 },
+  { firstName: "Jacob", age: 15 },
+  { firstName: "Sam", age: 64 },
+  { firstName: "Dave", age: 56 },
+  { firstName: "Neils", age: 65 }
+]
+```
+
+## Task 12
+
+Return the youngest and the oldest in a new array
+
+```javascript
+[
+  { firstName: "Susan", age: 14 },
+  { firstName: "Daniel", age: 16 },
+  { firstName: "Bruno", age: 56 },
+  { firstName: "Jacob", age: 15 },
+  { firstName: "Sam", age: 64 },
+  { firstName: "Dave", age: 56 },
+  { firstName: "Neils", age: 65 }
+]
+```
+
+## Task 13
+
+Return the array in alphabetical order
+
+```javascript
+["cat", "rabbits", "dog", "lion", "wolf", "leopard", "tiger"]
+```
+
+## Task 14
+
+Calculate and return the average age of employees
+
+```javascript
+[
+  { name: "Susan", age: 14, salary: 100 },
+  { name: "Daniel", age: 16, salary: 120 },
+  { name: "Bruno", age: 56, salary: 400 },
+  { name: "Jacob", age: 15, salary: 110 },
+  { name: "Sam", age: 64, salary: 500 },
+  { name: "Dave", age: 56, salary: 380 },
+  { name: "Neils", age: 65, salary: 540 }
+]
+```
+
+## Task 15
+
+Return the object below and include a property that lists all of their addresses they have lived at
+
+10 High Street, Manchester, M1 AVH
+96 West Terrace, Leeds, LS9 4PK
+50 Meadow Road, Hull, HU13 0DG
+
+```
+{
+  firstName: "Joe",
+  lastName: "Bloggs",
+  age: 30
+}
 ```
