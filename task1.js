@@ -4,4 +4,4 @@ const fullName = ((firstName, lastName) => {
   return firstName + lastName;
 });
 
-console.log(fullName('Jane ', 'Doe'));
+console.log(fullName('Emily ', 'Doe'));
