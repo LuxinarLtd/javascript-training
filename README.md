@@ -159,10 +159,38 @@ Return the object below and include a property that lists all of their addresses
 96 West Terrace, Leeds, LS9 4PK  
 50 Meadow Road, Hull, HU13 0DG  
 
-```
+```javascript
 {
   firstName: "Joe",
   lastName: "Bloggs",
   age: 30
 }
 ```
+
+## Task 16
+
+Print the numbers that are divisible by 5 from the list below
+
+```javascript
+[10, 20, 33, 46, 55, 72]
+```
+
+## Task 17
+
+Create a function that returns an array of it's digits, e.g 2342 should return [2,3,4,2]
+
+## Task 18
+
+Return the current date, ISO week number and how many days are left in the current year
+
+## Task 19
+
+Return the array, without duplicates, in reverse alphabetical order
+
+```javascript
+["cat", "rabbits", "dog", "lion", "cat", "rabbits", "wolf", "leopard", "tiger", "lion"]
+```
+
+## Task 20
+
+Write a guessing game where the user has to guess a secret number between 1 and 50. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries attempted should be printed. It counts only as one try if they input the same number multiple times consecutively.
