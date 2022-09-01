@@ -2,8 +2,8 @@
 
 const numbers = [10, 20, 33, 46, 55, 72];
 
-const factor5 = numbers(number => {
-  return number / 5;
+const factor5 = numbers.filter(number => {
+  return number % 5 === 0;
 });
 
-numbers.filter(factor5);
+console.log(factor5);
