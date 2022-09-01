@@ -9,3 +9,9 @@ const user = (firstName, lastName) => {
 };
 
 console.log(user('Jane', 'Doe'));
+
+// Improved
+
+const fullName = (firstName, lastName) => ({firstName, lastName});
+
+console.log(fullName('Jane', 'Doe'));
