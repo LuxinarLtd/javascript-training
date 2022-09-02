@@ -15,3 +15,9 @@ const person = people.filter(arr => {
 });
 
 console.log(person);
+
+// Improved
+
+const person2 = people.find(arr => arr.firstName === "Jacob");
+
+console.log(person2);
