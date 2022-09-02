@@ -23,3 +23,11 @@ let score = 0;
 for (let i = 0; i < users.length; i++) {
   console.log(users[i])
 };
+
+// Improved
+
+for (let i = 0; i < users.length; i++) {
+  users[i].score = 0;
+}
+
+console.log(users);
