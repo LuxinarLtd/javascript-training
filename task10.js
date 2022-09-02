@@ -28,3 +28,10 @@ const result = users.filter(user => {
     console.log(`${user.name} has Passed`);
   }
 });
+
+console.log(result);
+
+// Improved
+
+users.filter(user => user.score > 3).
+      map(user => console.log(`${user.name} has Passed`));
