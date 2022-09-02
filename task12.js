@@ -23,3 +23,10 @@ const range = people.reduce(person => {
 });
 
 console.log(range);
+
+// Improved
+const peopleSortAge = people.sort((a, b) => a.age - b.age);
+const youngest1 = peopleSortAge[0];
+const oldest1 = peopleSortAge[peopleSortAge.length - 1];
+
+console.log([youngest1, oldest1]);
