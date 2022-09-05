@@ -20,9 +20,9 @@ do {
   
   const repeated = usedNumbers.includes(guess);
 
-  if (repeated === true) {
+  if (repeated) {
     alert('You have already guessed this number');
-  } else if (repeated === false) {
+  } else {
     if (guess < randomNumber) {
       alert('Too low!');
       usedNumbers.push(guess);
@@ -39,4 +39,3 @@ do {
 } while (guess !== randomNumber);
 
 message.innerHTML = text;
-
