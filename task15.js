@@ -16,3 +16,16 @@ const homeAddresses = [
 person.addresses.push(homeAddresses);
 
 console.log(person);
+
+// Improved
+
+const person2 = {
+  firstName: "Joe",
+  lastName: "Bloggs",
+  age: 30,
+  addresses: [
+    { houseNumber: 10, street: 'High Street', city: 'Manchester', postCode: 'M1 AVH' },
+    { houseNumber: 96, street: 'West Terrace', city: 'Leeds', postCode: 'LS9 4PK' },
+    { houseNumber: 50, street: 'Meadow Road', city: 'Hull', postCode: 'HU13 0DG' }
+  ]
+};
