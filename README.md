@@ -194,3 +194,25 @@ Return the array, without duplicates, in reverse alphabetical order
 ## Task 20
 
 Write a guessing game where the user has to guess a secret number between 1 and 50. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries attempted should be printed. It counts only as one try if they input the same number multiple times consecutively.
+
+# DOM Tasks
+
+## Task 21
+
+Create a button that generates a random number every time it is clicked and displays the number.
+
+## Task 22
+
+Create a button that changes the web pages background colour to a random colour using RGB. This will also display the RGB colour code.
+
+## Task 23
+
+Create a form to fill in name, gender (drop down), age and country (drop down). When clicking on the submit button it will hide the form and display the data that has been submitted. Also display a message to inform the user that the form has been submitted.
+
+## Task 24 
+
+Create a to do list app. You enter a task into an input field and add it to a list of to do jobs. You can also edit a task or delete a task.
+
+## Task 25
+
+Create a quiz with 5 questions and 4 options for each question. The user clicks on the option they think is the correct answer and then moves the user onto the next question. At the end they will get a final score.
