@@ -15,5 +15,5 @@ btn.addEventListener('click', () => {
   const randomRange = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
   const randomNumber = randomRange(1, 50);
 
-  message.textContent = `${randomNumber}`;
+  message.textContent = randomNumber;
 });
