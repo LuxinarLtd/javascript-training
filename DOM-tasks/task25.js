@@ -100,18 +100,6 @@ const q5Btns = [
 // set score to 0
 let score = 0;
 
-// // function for clicking button and making selected
-// function clickBtn(btn) {
-//   btn.addEventListener('click', (e) => {
-//     btn.classList.add('selected');
-//   });
-// }
-
-// // calling function to each button
-// for (let i = 0; i < allBtns.length; i++) {
-//   clickBtn(allBtns[i]);
-// }
-
 // submitted answer to each question
 for (let i = 0; i < q1Btns.length; i++) {
   q1Btns[i].addEventListener('click', (e) => {
