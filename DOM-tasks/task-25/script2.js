@@ -2,6 +2,7 @@
 The user clicks on the option they think is the correct answer and then moves the user onto the next question. 
 At the end they will get a final score. */
 
+// get main div container from HTML
 const mainContainer = document.querySelector('.main-container');
 
 // get questions from HTML
@@ -39,29 +40,6 @@ const option5b = document.getElementById('q5a2');
 const option5c = document.getElementById('q5a3');
 
 // buttons grouped
-const allBtns = [
-  answerQ1,
-  answerQ2,
-  answerQ3,
-  answerQ4,
-  answerQ5,
-  option1a,
-  option1b,
-  option1c,
-  option2a,
-  option2b,
-  option2c,
-  option3a,
-  option3b,
-  option3c,
-  option4a,
-  option4b,
-  option4c,
-  option5a,
-  option5b,
-  option5c
-];
-
 const q1Btns = [
   answerQ1,
   option1a,
@@ -100,55 +78,39 @@ const q5Btns = [
 // set score to 0
 let score = 0;
 
-// submitted answer to each question
-for (let i = 0; i < q1Btns.length; i++) {
-  q1Btns[i].addEventListener('click', (e) => {
-    if (q1Btns[i] === answerQ1) {
-      score++;
-    }
-    question1.style.display = 'none';
-    question2.style.display = 'block';
-  });
+const createAddEventListeners = (questionButtons, answer, currentQuestion, nextQuestion, options = {}) => {
+  for (let i = 0; i < questionButtons.length; i++) {
+    questionButtons[i].addEventListener('click', (e) => {
+      if (questionButtons[i] === answer) {
+        score++;
+      }
+
+      currentQuestion.style.display = 'none';
+
+      if (options.lastQuestion) {
+        const results = document.createElement('p');
+    
+        results.textContent = `You scored ${score} out of 5`;
+        mainContainer.appendChild(results);
+      } else {
+        nextQuestion.style.display = 'block';
+      }
+    });
+  }
 }
 
-for (let i = 0; i < q2Btns.length; i++) {
-  q2Btns[i].addEventListener('click', (e) => {
-    if (q2Btns[i] === answerQ2) {
-      score++;
-    }
-    question2.style.display = 'none';
-    question3.style.display = 'block';
-  });
-}
+// submitted answer to question 1 when button clicked
+createAddEventListeners(q1Btns, answerQ1, question1, question2);
 
-for (let i = 0; i < q3Btns.length; i++) {
-  q3Btns[i].addEventListener('click', (e) => {
-    if (q3Btns[i] === answerQ3) {
-      score++;
-    }
-    question3.style.display = 'none';
-    question4.style.display = 'block';
-  });
-}
+// submitted answer to question 2 when button clicked
+createAddEventListeners(q2Btns, answerQ2, question2, question3);
 
-for (let i = 0; i < q4Btns.length; i++) {
-  q4Btns[i].addEventListener('click', (e) => {
-    if (q4Btns[i] === answerQ4) {
-      score++;
-    }
-    question4.style.display = 'none';
-    question5.style.display = 'block';
-  });
-}
+// submitted answer to question 3 when button clicked
+createAddEventListeners(q3Btns, answerQ3, question3, question4);
 
-for (let i = 0; i < q5Btns.length; i++) {
-  q5Btns[i].addEventListener('click', (e) => {
-    if (q5Btns[i] === answerQ5) {
-      score++;
-    }
-    question5.style.display = 'none';
-    const results = document.createElement('p');
-    mainContainer.appendChild(results);
-    results.textContent = `You scored ${score} out of 5`;
-  });
-}
+// submitted answer to question 4 when button clicked
+createAddEventListeners(q4Btns, answerQ4, question4, question5);
+
+// submitted answer to question 5 when button clicked
+createAddEventListeners(q5Btns, answerQ5, question5, null, { lastQuestion: true });
+
