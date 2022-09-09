@@ -2,6 +2,7 @@
 When clicking on the submit button it will hide the form and display the data that has been submitted. 
 Also display a message to inform the user that the form has been submitted. */
 
+// create countries dropdown
 const countries = [
   'Afghanistan',
   'Albania',
@@ -221,6 +222,7 @@ for (let country of countries) {
   countryElement.appendChild(newOption);
 }
 
+// create genders dropdown
 const genders = [
   'Female',
   'Male',
@@ -235,38 +237,47 @@ for (let gender of genders) {
   genderElement.appendChild(newOption);
 }
 
-const btn = document.getElementById('submit');
-const message = document.createElement('h1');
 const container = document.getElementById('container');
-container.appendChild(btn);
-container.appendChild(message);
-
 const form = document.getElementById('form');
 
-btn.addEventListener('click', (e) => {
+// submit form
+form.addEventListener('submit', (e) => {
   form.style.display = 'none';
-  btn.style.display = 'none';
 
   // display input data
-  let nameInput = document.getElementById('name').value;
+  // input name value
+  const nameInput = document.getElementById('name').value;
   const submittedName = document.createElement('h2');
-  container.appendChild(submittedName);
+
   submittedName.textContent = `Name: ${nameInput}`;
+  container.appendChild(submittedName);
 
-  let genderInput = document.getElementById('gender').value;
+  // input gender value
+  const genderInput = document.getElementById('gender').value;
   const submittedGender = document.createElement('h2');
-  container.appendChild(submittedGender);
+
   submittedGender.textContent = `Gender: ${genderInput}`;
+  container.appendChild(submittedGender);
 
-  let ageInput = document.getElementById('age').value;
+  // input age value
+  const ageInput = document.getElementById('age').value;
   const submittedAge = document.createElement('h2');
-  container.appendChild(submittedAge);
-  submittedAge.textContent = `Age: ${ageInput}`;
 
-  let countryInput = document.getElementById('country').value;
+  submittedAge.textContent = `Age: ${ageInput}`;
+  container.appendChild(submittedAge);
+
+  // input country value
+  const countryInput = document.getElementById('country').value;
   const submittedCountry = document.createElement('h2');
-  container.appendChild(submittedCountry);
+
   submittedCountry.textContent = `Country: ${countryInput}`;
+  container.appendChild(submittedCountry);
+
+  // display message
+  const message = document.createElement('h1');
 
   message.textContent = 'The form has been submitted';
+  container.appendChild(message);
+
+  e.preventDefault();
 });
