@@ -216,3 +216,20 @@ Create a to do list app. You enter a task into an input field and add it to a li
 ## Task 25
 
 Create a quiz with 5 questions and 4 options for each question. The user clicks on the option they think is the correct answer and then moves the user onto the next question. At the end they will get a final score.
+
+
+# Dog API
+
+Create the new addition to online dating apps, “Puppy Love”, a website for dogs to find love.
+
+Much like the dating app Tinder, the user can choose what they are looking for (breed) and are presented with photos of potential matches, these matches can be accepted or declined.
+
+There should be somewhere you can review your matches and remove any you’re not happy with.
+
+The dog API to use can be found at: https://dog.ceo/dog-api/
+
+Extra credit for:  
+Stylish website  
+Multiple search features  
+Categorised matched results  
+Swiping (pawing?) left or right  
